@@ -12,6 +12,7 @@
 	
 		$(".banner-image").backstretch('images/banner.jpg');
 		
+		/*
 		// Fixed header
 		//-----------------------------------------------
 		$(window).scroll(function() {
@@ -33,6 +34,7 @@
 				}
 			};
 		});
+		*/
 
 		//Scroll Spy
 		//-----------------------------------------------
@@ -40,7 +42,7 @@
 			$("body").addClass("scroll-spy");
 			$('body').scrollspy({ 
 				target: '.scrollspy',
-				offset: 101
+				offset: 40
 			});
 		}
 
@@ -53,7 +55,7 @@
 					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 					if (target.length) {
 						$('html,body').animate({
-							scrollTop: target.offset().top-100
+							scrollTop: target.offset().top-39
 						}, 1000);
 						return false;
 					}
