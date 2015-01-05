@@ -11,6 +11,28 @@
 	$(document).ready(function(){
 	
 		$(".banner-image").backstretch('images/banner.jpg');
+		
+		// Fixed header
+		//-----------------------------------------------
+		$(window).scroll(function() {
+			if (($(".header.fixed").length > 0)) { 
+				if(($(this).scrollTop() > 0) && ($(window).width() > 767)) {
+					$("body").addClass("fixed-header-on");
+				} else {
+					$("body").removeClass("fixed-header-on");
+				}
+			};
+		});
+
+		$(window).load(function() {
+			if (($(".header.fixed").length > 0)) { 
+				if(($(this).scrollTop() > 0) && ($(window).width() > 767)) {
+					$("body").addClass("fixed-header-on");
+				} else {
+					$("body").removeClass("fixed-header-on");
+				}
+			};
+		});
 
 		//Scroll Spy
 		//-----------------------------------------------
@@ -18,7 +40,7 @@
 			$("body").addClass("scroll-spy");
 			$('body').scrollspy({ 
 				target: '.scrollspy',
-				offset: 112
+				offset: 101
 			});
 		}
 
@@ -31,7 +53,7 @@
 					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 					if (target.length) {
 						$('html,body').animate({
-							scrollTop: target.offset().top-111
+							scrollTop: target.offset().top-100
 						}, 1000);
 						return false;
 					}
@@ -69,7 +91,6 @@
 					filter: "*"
 				});
 				// filter items on button click
-				/*
 				$('.filters').on( 'click', 'ul.nav li a', function() {
 					var filterValue = $(this).attr('data-filter');
 					$(".filters").find("li.active").removeClass("active");
@@ -77,17 +98,9 @@
 					$container.isotope({ filter: filterValue });
 					return false;
 				});
-				*/
 			});
 		};
 
-		//My new code for the active link
-		$("[href]").each(function() {
-		if (this.href == window.location.href) {
-			$(this).parent().addClass("active");
-        }
-		});
-		
 		//Modal
 		//-----------------------------------------------
 		if($(".modal").length>0) {
