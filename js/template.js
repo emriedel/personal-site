@@ -111,10 +111,11 @@
 			});
 		}
 
-		
+	/*	
 	$("iframe#twitter-widget-0").waitUntilExists(function(){
 		$("iframe#twitter-widget-0").contents().find('head').append('<style>img.u-photo.avatar{display:none !important;}.var-chromeless .tweet{padding-left:0;} .footer{display:none !important;} .full-name{display:none !important;} .header{padding-bottom: 5px;} .e-entry-title{font-size: 16px !important;}</style>');
 	});
+	*/
 		
 	}); // End document ready
 })(this.jQuery);
