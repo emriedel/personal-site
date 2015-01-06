@@ -73,7 +73,8 @@ h4 span {
 	color: #DDD;
 }
 a {
-	color: #55acee;
+	color: #666;
+	text-decoration: underline;
 }
 a:hover {
 	color: #339BEB;
@@ -148,7 +149,7 @@ blockquote {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(25, 51, 71, 0.75);
+	background-color: rgba(0, 0, 0, 0.75);
 	content: "";
 }
 
@@ -174,7 +175,7 @@ blockquote {
 }
 .section {
 	background-color: #ffffff;
-	padding: 40px 0;
+	padding: 60px 0;
 }
 
 /* Backgrounds
@@ -281,7 +282,7 @@ blockquote {
 	}
 }
 .space {
-	padding: 20px 0;
+	padding: 10px 0;
 }
 .pr-10 {
 	padding-right: 10px;
@@ -502,7 +503,10 @@ textarea {
 }
 .navbar-nav {
 	float: none;
-	text-align: center;
+}
+.navbar-centered{
+	margin: 0 auto;
+	display: block;
 }
 .navbar-default {
 	background-color: transparent;
@@ -766,7 +770,7 @@ textarea {
 	width: 100%;
 	margin: 5px auto;
   position: relative;
-  padding: 5px 10px;
+  padding: 5px 15px;
   color: #000;
   /*background: #f3961c;*/
   border: 2px solid #36C;
@@ -811,10 +815,11 @@ textarea {
 /* Horizontal Rule */
 .hr{
 	height: 0;
-	border-top: 1px solid #00274c;
-	max-width: 750px;
+	border-top: 1px solid #FBEC5D;
+	max-width: 550px;
 	position: relative;
 	margin: 0 auto;
+	margin-bottom: 15px;
 }
 
 .hr:after{
@@ -825,7 +830,7 @@ textarea {
 	bottom: -3px;
 	left: 50%;
 	margin-left: -3px;
-	background-color: #00274c;
+	background-color: #FBEC5D;
 	transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
