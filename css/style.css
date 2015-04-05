@@ -60,7 +60,7 @@ h6 {
 h1 span,
 h2 span,
 h3 span,
-h4 span {
+h4 span, span {
 	color: #FBEC5D;
 }
 .text-colored {
@@ -149,7 +149,7 @@ blockquote {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(0, 0, 0, 0.55);
 	content: "";
 }
 
@@ -158,6 +158,52 @@ blockquote {
 	top: 0;
 	width: 100%;
 	z-index: 2;
+}
+
+.banner-menu{
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	z-index: 2;
+	padding: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+.banner-menu ul{
+	list-style-type: none;
+	font-size: 30px;
+}
+
+.banner-menu li{
+	border: 1px solid #FBEC5D;
+	padding: 5px;
+	margin: 5px;
+}
+
+.banner-menu ul a li{
+	color: #FBEC5D;
+}
+
+.banner-menu ul a li:hover{
+	color: #FFF;
+	background-color: #FBEC5D;
+}
+
+.banner-text{
+	position: absolute;
+	top: 75%;
+	right: 20px;
+	z-index: 2;
+	font-size: 80px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.banner-text p{
+	margin-top: -30px;
+	font-weight: normal;
+	font-size: 25px;
 }
 
 .banner-caption {
@@ -839,11 +885,11 @@ textarea {
 }
 
 .dark-bg{
-	background: url('../images/binding_dark.PNG');
+	background: url('../images/binding_dark.png');
 }
 
 .light-bg{
-	background: url('../images/white_wall_hash.PNG');
+	background: url('../images/white_wall_hash.png');
 }
 
 img.grayscale {
